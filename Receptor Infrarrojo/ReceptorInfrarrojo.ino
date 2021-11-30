@@ -34,6 +34,7 @@ void loop()
         Serial.println(codigo.value,HEX);
 
         //leer los botones y darles una accion
+
         //rojo
         if(codigo.value == B1){
             digitalWrite(ledR, !digitalRead(ledR));
@@ -51,9 +52,7 @@ void loop()
 
         //blanco
         if(codigo.value == B0){
-            digitalWrite(ledR, 0);
-            digitalWrite(ledV, 0);
-            digitalWrite(ledA, 0);
+            resetColor();
             digitalWrite(ledR, !digitalRead(ledR));
             digitalWrite(ledV, !digitalRead(ledV));
             digitalWrite(ledA, !digitalRead(ledA));
@@ -61,13 +60,12 @@ void loop()
 
         //off
         if(codigo.value == BApagado){
-            digitalWrite(ledR, 0);
-            digitalWrite(ledV, 0);
-            digitalWrite(ledA, 0);
+            resetColor();
         }
 
         //Rosa
         if(codigo.value == B4){
+            resetColor();
             analogWrite(ledR, 255);
             analogWrite(ledV, 51);
             analogWrite(ledA, 246);
@@ -76,5 +74,11 @@ void loop()
         irrecv.resume();
     }
     delay(100);
+}
+
+void resetColor(){
+    analogWrite(ledR, 0);       
+    analogWrite(ledV, 0);
+    analogWrite(ledA, 0);
 }
 
