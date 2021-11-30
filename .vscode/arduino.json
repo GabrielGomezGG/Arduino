@@ -1,5 +1,5 @@
 {
-    "sketch": "Receptor Infrarrojo\\ReceptorInfrarrojo.ino",
+    "sketch": "PotenciometroConLedRGB\\PotenciometroConLedRGB.ino",
     "board": "arduino:avr:uno",
     "programmer": "arduino:avrispmkii",
     "port": "COM6"
