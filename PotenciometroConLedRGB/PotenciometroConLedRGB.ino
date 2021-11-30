@@ -25,21 +25,22 @@ void loop()
     pVerde();
     pAzul();
     colorActual();
+    delay(100);
 }
 
 void pRojo(){
     valorPRojo = analogRead(PRojo)/4;
-    analogWrite(PRojo, valorPRojo);
+    //analogWrite(PRojo, valorPRojo);
 }
 
 void pVerde(){
     valorPVerde = analogRead(PVerde)/4;
-    analogWrite(PVerde, valorPVerde);
+    //analogWrite(PVerde, valorPVerde);
 }
 
 void pAzul(){
     valorPAzul = analogRead(PAzul)/4;
-    analogWrite(PAzul, valorPAzul);
+    //analogWrite(PAzul, valorPAzul);
 }
 
 void colorActual(){
