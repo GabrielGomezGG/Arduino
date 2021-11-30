@@ -1,0 +1,6 @@
+{
+    "sketch": "Receptor Infrarrojo\\ReceptorInfrarrojo.ino",
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:avrispmkii",
+    "port": "COM6"
+}
