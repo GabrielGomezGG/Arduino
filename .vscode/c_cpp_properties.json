@@ -17,6 +17,7 @@
             "includePath": [
                 "C:\\Users\\Titi\\Desktop\\programas\\arduino-1.8.16\\hardware\\arduino\\avr\\cores\\arduino",
                 "C:\\Users\\Titi\\Desktop\\programas\\arduino-1.8.16\\hardware\\arduino\\avr\\variants\\standard",
+                "C:\\Users\\Titi\\Documents\\Arduino\\libraries\\IRremote\\src",
                 "c:\\users\\titi\\desktop\\programas\\arduino-1.8.16\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include",
                 "c:\\users\\titi\\desktop\\programas\\arduino-1.8.16\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include-fixed",
                 "c:\\users\\titi\\desktop\\programas\\arduino-1.8.16\\hardware\\tools\\avr\\avr\\include"

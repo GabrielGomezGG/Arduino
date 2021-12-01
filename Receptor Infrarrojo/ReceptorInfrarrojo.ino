@@ -1,4 +1,4 @@
-#include<IRremote.h>
+#include <IRremote.h>
 
 #define B1 0xFD08F7 //Rojo
 #define B2 0xFD8877 //Verde
