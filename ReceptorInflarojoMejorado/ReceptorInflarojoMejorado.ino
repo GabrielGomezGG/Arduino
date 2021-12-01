@@ -28,18 +28,16 @@ const float b7 = 16586983;
 const float b8 = 16619623;
 const float b9 = 16603303;
 
-Led ledR,ledV,ledA;
+Led ledR = Led(3,b1,b2,b3,"Rojo");
+Led ledV = Led(6,b4,b5,b6,"Verde");
+Led ledA = Led(5,b7,b8,b9,"Azul");
 
 int SENSOR = 11;    //sensor inflarojo en el pin11
 IRrecv irrecv(SENSOR);  //objeto de la clase IRrecv (resive las señales del sensor)
 decode_results codigo;
 
 void setup()    
-{
-    ledR = Led(3,b1,b2,b3,"Rojo");
-    ledV = Led(6,b4,b5,b6,"Verde");
-    ledA = Led(5,b7,b8,b9,"Azul");
-    
+{    
 	Serial.begin(9600);
     irrecv.enableIRIn();
 
