@@ -39,19 +39,21 @@ public:
 
 
     //sube el brillo +15
-    void bajarBrillo(){
+    void subirBrillo(){
         if(isEncendido){
             if(brillo >= 0 && brillo < 255){
                 brillo+=15;
+                analogWrite(numeroDePin, brillo);
             }
         }
     }
 
     //baja el brillo -15
-    void subirBrillo(){
+    void bajarBrillo(){
         if(isEncendido){
             if(brillo > 0 && brillo <= 255){
                 brillo-=15;
+                analogWrite(numeroDePin, brillo);
             }
         }
     }

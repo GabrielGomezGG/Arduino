@@ -17,7 +17,6 @@
 // #define BCHu 0xFD00FF //Boton off
 // #define BCH 0xFD807F  //Boton guardar
 // #define BCHd 0xFD40BF //Boton borrar
-
 const float b1 = 16582903;
 const float b2 = 16615543;
 const float b3 = 16599223;
